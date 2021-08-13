@@ -25,13 +25,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome Back!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mah-ri-Aqz">
-                                <rect key="frame" x="111" y="164" width="192" height="33"/>
+                                <rect key="frame" x="109.66666666666667" y="187.66666666666666" width="194.66666666666663" height="33"/>
                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="28"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Email here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uOe-qB-WLI" customClass="TextFieldExtension" customModule="Training" customModuleProvider="target">
-                                <rect key="frame" x="35" y="282" width="344" height="16"/>
+                                <rect key="frame" x="35" y="292.66666666666669" width="344" height="16"/>
                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <userDefinedRuntimeAttributes>
@@ -44,13 +44,13 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DiX-rw-YYL">
-                                <rect key="frame" x="35" y="250" width="25" height="12"/>
+                                <rect key="frame" x="35" y="273.66666666666669" width="25" height="12"/>
                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="10"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sHG-hN-PrD" customClass="TextFieldExtension" customModule="Training" customModuleProvider="target">
-                                <rect key="frame" x="35" y="361.66666666666669" width="344" height="15"/>
+                                <rect key="frame" x="35" y="359" width="344" height="14"/>
                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                 <userDefinedRuntimeAttributes>
@@ -63,19 +63,19 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tEO-Xg-btr">
-                                <rect key="frame" x="35" y="329.66666666666669" width="44.333333333333343" height="12"/>
+                                <rect key="frame" x="35" y="340" width="44.333333333333343" height="12"/>
                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="10"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forgot Password?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VtH-rr-29c">
-                                <rect key="frame" x="150.66666666666666" y="398.33333333333331" width="112.99999999999997" height="17"/>
+                                <rect key="frame" x="149.66666666666666" y="394.66666666666669" width="114.66666666666666" height="17"/>
                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
                                 <color key="textColor" red="0.0" green="0.73725490196078436" blue="0.26666666666666666" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bdv-dq-5fh" customClass="RoundButton" customModule="Training" customModuleProvider="target">
-                                <rect key="frame" x="35" y="436" width="344" height="50"/>
+                                <rect key="frame" x="35" y="432.66666666666669" width="344" height="50"/>
                                 <color key="backgroundColor" red="0.0" green="0.73725490199999999" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="qfH-lD-0hf"/>
@@ -95,19 +95,20 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Bdv-dq-5fh" secondAttribute="trailing" constant="35" id="4QO-nB-872"/>
-                            <constraint firstItem="uOe-qB-WLI" firstAttribute="top" secondItem="DiX-rw-YYL" secondAttribute="bottom" constant="20" id="8q7-VU-4Xt"/>
+                            <constraint firstItem="uOe-qB-WLI" firstAttribute="top" secondItem="DiX-rw-YYL" secondAttribute="bottom" constant="7" id="8q7-VU-4Xt"/>
                             <constraint firstItem="DiX-rw-YYL" firstAttribute="top" secondItem="mah-ri-Aqz" secondAttribute="bottom" constant="53" id="AME-Nd-MT8"/>
-                            <constraint firstItem="sHG-hN-PrD" firstAttribute="top" secondItem="tEO-Xg-btr" secondAttribute="bottom" constant="20" id="Flf-1D-PHz"/>
+                            <constraint firstItem="sHG-hN-PrD" firstAttribute="top" secondItem="tEO-Xg-btr" secondAttribute="bottom" constant="7" id="Flf-1D-PHz"/>
                             <constraint firstItem="VtH-rr-29c" firstAttribute="top" secondItem="sHG-hN-PrD" secondAttribute="bottom" constant="21.800000000000001" id="I37-Is-9ij"/>
                             <constraint firstItem="uOe-qB-WLI" firstAttribute="leading" secondItem="DiX-rw-YYL" secondAttribute="leading" id="KCC-Mb-4b4"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sHG-hN-PrD" secondAttribute="trailing" constant="35" id="LLJ-1B-NlY"/>
                             <constraint firstItem="VtH-rr-29c" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="M8i-0x-Nik"/>
                             <constraint firstItem="Bdv-dq-5fh" firstAttribute="top" secondItem="VtH-rr-29c" secondAttribute="bottom" constant="20.699999999999999" id="Orc-nm-kac"/>
+                            <constraint firstItem="mah-ri-Aqz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VTa-kb-UuB"/>
                             <constraint firstItem="Bdv-dq-5fh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="dEN-M7-0c9"/>
                             <constraint firstItem="tEO-Xg-btr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="gOA-84-4ga"/>
+                            <constraint firstItem="mah-ri-Aqz" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-164" id="hf1-vd-OeY"/>
                             <constraint firstItem="DiX-rw-YYL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="iEa-v3-Zzw"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uOe-qB-WLI" secondAttribute="trailing" constant="35" id="rWl-Rp-YUs"/>
-                            <constraint firstItem="mah-ri-Aqz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="164" id="sdD-XU-agZ"/>
                             <constraint firstItem="mah-ri-Aqz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tjd-DY-2wp"/>
                             <constraint firstItem="sHG-hN-PrD" firstAttribute="leading" secondItem="tEO-Xg-btr" secondAttribute="leading" id="vD7-2z-aPF"/>
                             <constraint firstItem="tEO-Xg-btr" firstAttribute="top" secondItem="uOe-qB-WLI" secondAttribute="bottom" constant="31.5" id="yeF-ea-v6p"/>
@@ -124,10 +125,10 @@
             <size key="intrinsicContentSize" width="40" height="31"/>
         </designable>
         <designable name="sHG-hN-PrD">
-            <size key="intrinsicContentSize" width="94" height="15"/>
+            <size key="intrinsicContentSize" width="84.666666666666671" height="14"/>
         </designable>
         <designable name="uOe-qB-WLI">
-            <size key="intrinsicContentSize" width="97" height="16"/>
+            <size key="intrinsicContentSize" width="87.666666666666671" height="15.666666666666666"/>
         </designable>
     </designables>
     <resources>
