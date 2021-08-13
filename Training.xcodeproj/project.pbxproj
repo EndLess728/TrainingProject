@@ -3,14 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		3691D2ABE7987576F53B4653 /* libPods-Training.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C8A02AE8B75F3D7C6439B2FC /* libPods-Training.a */; };
+		8188909C26C6968800B09A88 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8188909B26C6968800B09A88 /* SignUpViewController.swift */; };
 		81C946DA26C646DD007C849D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C946D926C646DD007C849D /* AppDelegate.swift */; };
 		81C946DC26C646DD007C849D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C946DB26C646DD007C849D /* SceneDelegate.swift */; };
-		81C946DE26C646DD007C849D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C946DD26C646DD007C849D /* ViewController.swift */; };
+		81C946DE26C646DD007C849D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C946DD26C646DD007C849D /* LoginViewController.swift */; };
 		81C946E126C646DD007C849D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81C946DF26C646DD007C849D /* Main.storyboard */; };
 		81C946E326C646DF007C849D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81C946E226C646DF007C849D /* Assets.xcassets */; };
 		81C946E626C646DF007C849D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81C946E426C646DF007C849D /* LaunchScreen.storyboard */; };
@@ -34,10 +35,11 @@
 /* Begin PBXFileReference section */
 		0E79D85528F1B85F30B8AF14 /* Pods-Training.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Training.debug.xcconfig"; path = "Target Support Files/Pods-Training/Pods-Training.debug.xcconfig"; sourceTree = "<group>"; };
 		69BCDE2B8A158FBCA56ABDBE /* Pods-Training.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Training.release.xcconfig"; path = "Target Support Files/Pods-Training/Pods-Training.release.xcconfig"; sourceTree = "<group>"; };
+		8188909B26C6968800B09A88 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		81C946D626C646DD007C849D /* Training.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Training.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81C946D926C646DD007C849D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		81C946DB26C646DD007C849D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		81C946DD26C646DD007C849D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		81C946DD26C646DD007C849D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		81C946E026C646DD007C849D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		81C946E226C646DF007C849D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		81C946E526C646DF007C849D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -82,6 +84,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		8188909A26C6961400B09A88 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				81C946DD26C646DD007C849D /* LoginViewController.swift */,
+				8188909B26C6968800B09A88 /* SignUpViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		81C946CD26C646DD007C849D = {
 			isa = PBXGroup;
 			children = (
@@ -103,11 +114,11 @@
 		81C946D826C646DD007C849D /* Training */ = {
 			isa = PBXGroup;
 			children = (
+				8188909A26C6961400B09A88 /* ViewControllers */,
 				81C9470326C658A5007C849D /* Fonts */,
 				81C946EE26C65130007C849D /* Extensions */,
 				81C946D926C646DD007C849D /* AppDelegate.swift */,
 				81C946DB26C646DD007C849D /* SceneDelegate.swift */,
-				81C946DD26C646DD007C849D /* ViewController.swift */,
 				81C946DF26C646DD007C849D /* Main.storyboard */,
 				81C946E226C646DF007C849D /* Assets.xcassets */,
 				81C946E426C646DF007C849D /* LaunchScreen.storyboard */,
@@ -262,7 +273,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81C946DE26C646DD007C849D /* ViewController.swift in Sources */,
+				81C946DE26C646DD007C849D /* LoginViewController.swift in Sources */,
+				8188909C26C6968800B09A88 /* SignUpViewController.swift in Sources */,
 				81C946F026C65157007C849D /* TextFieldExtension.swift in Sources */,
 				81C946DA26C646DD007C849D /* AppDelegate.swift in Sources */,
 				81C9470126C65545007C849D /* UIColor+Hex.swift in Sources */,
