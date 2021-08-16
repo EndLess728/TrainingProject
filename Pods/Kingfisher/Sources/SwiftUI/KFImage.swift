@@ -161,7 +161,6 @@ struct KFImageRenderer: View {
     }
 
     /// Declares the content and behavior of this view.
-    @ViewBuilder
     var body: some View {
         if let image = binder.loadedImage {
             configurations

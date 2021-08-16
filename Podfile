@@ -8,6 +8,8 @@ target 'Training' do
   # Pods for Training
  pod 'Kingfisher'
  pod 'IQKeyboardManagerSwift'
+ pod 'Alamofire'
+ pod 'NVActivityIndicatorView'
 
 
 end
