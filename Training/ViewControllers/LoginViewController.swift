@@ -12,10 +12,20 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var emailTxtField: TextFieldExtension!
     @IBOutlet weak var passwordTxtField: TextFieldExtension!
     
+    //    var userModel = LoginModel(from: <#Decoder#>)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
     }
+    
+//    override func viewDidAppear(_ animated: Bool) {
+//        if defaults.isLoggedIn() {
+//            let homeScreeen = self.storyboard!.instantiateViewController(withIdentifier :"HomeScreenViewController") as! HomeScreenViewController
+//            self.navigationController?.pushViewController(homeScreeen, animated: true)
+//        }
+//    }
     
     func clearFields(){
         self.emailTxtField.text = ""
@@ -23,7 +33,7 @@ class LoginViewController: UIViewController {
     }
     
     func signInAPI(email:String,password:String){
-       
+        
         
         let dictionary = ["email":email,
                           "password":password]
@@ -39,20 +49,32 @@ class LoginViewController: UIViewController {
             
             case .success( _):
                 
-               
-                    print(response)
-                    
-                   let responseDict = response.value as! [String : Any]
-                    // print(responseDict)
-                    let status = responseDict["success"] as! [String : AnyObject]
-                    print("statuscode",status)
-                    
-                    
-              
+                print(response)
+                
+                
+                
+                if let data = response.data {
+                    do{
+                        let userResponse = try JSONDecoder().decode(LoginModel.self, from: data)
+                        
+                        print(userResponse.data.token)
+                        defaults.setToken(value: userResponse.data.token)
+                        defaults.setLoggedIn(value: true)
+                        
+                        let homeScreeen = self.storyboard!.instantiateViewController(withIdentifier :"HomeScreenViewController") as! HomeScreenViewController
+                        self.navigationController?.pushViewController(homeScreeen, animated: true)
+                    } catch let err {
+                        print(err.localizedDescription)
+                    }
+                }
+                
                 
             case .failure(let error):
                 print("Request error: \(error.localizedDescription)")
             }
+            
+            let checkToken = defaults.getToken()
+            print("check saved token",checkToken)
             
         }
     }

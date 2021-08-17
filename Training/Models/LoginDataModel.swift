@@ -6,17 +6,15 @@
 //
 
 import Foundation
-struct LoginDataModel : Codable {
-    let token : String?
-
-    enum CodingKeys: String, CodingKey {
-
-        case token = "token"
-    }
-
-    init(from decoder: Decoder) throws {
-        let values = try decoder.container(keyedBy: CodingKeys.self)
-        token = try values.decodeIfPresent(String.self, forKey: .token)
-    }
-
+// MARK: - LoginModel
+struct LoginModel: Codable {
+    let success: Bool
+    let message: String
+    let data: DataClass
 }
+
+// MARK: - DataClass
+struct DataClass: Codable {
+    let token: String
+}
+

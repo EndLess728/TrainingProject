@@ -23,7 +23,7 @@
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="Training" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="BYZ-38-t0r" customClass="LoginViewController" customModule="Training" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -337,7 +337,7 @@
         <!--Home Screen View Controller-->
         <scene sceneID="ADY-en-a3V">
             <objects>
-                <viewController id="sNT-CC-Gav" customClass="HomeScreenViewController" customModule="Training" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeScreenViewController" id="sNT-CC-Gav" customClass="HomeScreenViewController" customModule="Training" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pcX-zz-cCJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -650,10 +650,10 @@
             <size key="intrinsicContentSize" width="94" height="15"/>
         </designable>
         <designable name="sHG-hN-PrD">
-            <size key="intrinsicContentSize" width="84" height="15"/>
+            <size key="intrinsicContentSize" width="94" height="15"/>
         </designable>
         <designable name="uOe-qB-WLI">
-            <size key="intrinsicContentSize" width="87" height="16"/>
+            <size key="intrinsicContentSize" width="97" height="16"/>
         </designable>
     </designables>
     <resources>

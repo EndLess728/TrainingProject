@@ -12,17 +12,6 @@ class Singleton: NSObject {
     
     static let sharedInstance = Singleton()
     
-    var window: UIWindow?
-    var spinnerView = UIView()
-    var activityIndicatorImageView = UIImageView()
-    let mainBackBlurView: UIView = UIView()
-    let spinner: UIActivityIndicatorView = UIActivityIndicatorView()
-    let screenSize: CGRect = UIScreen.main.bounds
-    let screenWidth = UIScreen.main.bounds.width
-    let screenHight = UIScreen.main.bounds.height
-    var rotateActivtiyIndicator : Bool = false
-    let appDelegate = UIApplication.shared.delegate as! AppDelegate
-    
     func convertToJSONString(value: AnyObject) -> String? {
         if JSONSerialization.isValidJSONObject(value) {
             do{
@@ -35,10 +24,6 @@ class Singleton: NSObject {
         }
         return nil
     }
-    
-
-
-    
     
 }
 

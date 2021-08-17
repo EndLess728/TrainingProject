@@ -17,67 +17,31 @@ extension String {
     
 }
 
-extension UIViewController {
-
-    var activityIndicatorTag: Int { return 999999 }
+enum UserDefaultsKeys : String {
+    case isLoggedIn
+    case token
 }
 
-extension UIViewController {
+extension UserDefaults{
 
-    //Previous code
-
-
-    func startActivityIndicator(
-        style: UIActivityIndicatorView.Style = UIActivityIndicatorView.Style.medium,
-        location: CGPoint? = nil) {
-
-        //Set the position - defaults to `center` if no`location`
-
-        //argument is provided
-
-        let loc = location ?? self.view.center
-
-        //Ensure the UI is updated from the main thread
-
-        //in case this method is called from a closure
-
-        DispatchQueue.main.async {
-
-            //Create the activity indicator
-
-            let activityIndicator = UIActivityIndicatorView(style: style)
-            //Add the tag so we can find the view in order to remove it later
-
-            activityIndicator.tag = self.activityIndicatorTag
-            //Set the location
-
-            activityIndicator.center = loc
-            activityIndicator.hidesWhenStopped = true
-            //Start animating and add the view
-
-            activityIndicator.startAnimating()
-            self.view.addSubview(activityIndicator)
-        }
+    //MARK: Check Login
+    func setLoggedIn(value: Bool) {
+        set(value, forKey: UserDefaultsKeys.isLoggedIn.rawValue)
+        //synchronize()
     }
-}
 
-extension UIViewController {
+    func isLoggedIn()-> Bool {
+        return bool(forKey: UserDefaultsKeys.isLoggedIn.rawValue)
+    }
 
-    //Previous code
+    //MARK: Save User Token
+    func setToken(value: String){
+        set(value, forKey: UserDefaultsKeys.token.rawValue)
+       
+    }
 
-
-     func stopActivityIndicator() {
-
-        //Again, we need to ensure the UI is updated from the main thread!
-
-        DispatchQueue.main.async {
-            //Here we find the `UIActivityIndicatorView` and remove it from the view
-
-            if let activityIndicator = self.view.subviews.filter(
-            { $0.tag == self.activityIndicatorTag}).first as? UIActivityIndicatorView {
-                activityIndicator.stopAnimating()
-                activityIndicator.removeFromSuperview()
-            }
-        }
+    //MARK: Retrieve User Token
+    func getToken() -> String{
+        return string(forKey:UserDefaultsKeys.token.rawValue) ?? ""
     }
 }
