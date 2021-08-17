@@ -23,6 +23,8 @@ class LoginViewController: UIViewController {
     }
     
     func signInAPI(email:String,password:String){
+       
+        
         let dictionary = ["email":email,
                           "password":password]
         
@@ -37,12 +39,16 @@ class LoginViewController: UIViewController {
             
             case .success( _):
                 
-                do {
+               
                     print(response)
                     
-                } catch let error as NSError {
-                    print("Failed to load: \(error.localizedDescription)")
-                }
+                   let responseDict = response.value as! [String : Any]
+                    // print(responseDict)
+                    let status = responseDict["success"] as! [String : AnyObject]
+                    print("statuscode",status)
+                    
+                    
+              
                 
             case .failure(let error):
                 print("Request error: \(error.localizedDescription)")

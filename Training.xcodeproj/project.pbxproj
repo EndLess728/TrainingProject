@@ -17,6 +17,7 @@
 		8104EE3F26CA23EF00472E93 /* MAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8104EE3E26CA23EF00472E93 /* MAlert.swift */; };
 		8104EE4226CA288E00472E93 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8104EE4126CA288E00472E93 /* Constants.swift */; };
 		8104EE5126CA376300472E93 /* LoginDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8104EE5026CA376300472E93 /* LoginDataModel.swift */; };
+		8104EE5626CA50CC00472E93 /* GifImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8104EE5526CA50CC00472E93 /* GifImage.swift */; };
 		8188909C26C6968800B09A88 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8188909B26C6968800B09A88 /* SignUpViewController.swift */; };
 		81C946DA26C646DD007C849D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C946D926C646DD007C849D /* AppDelegate.swift */; };
 		81C946DC26C646DD007C849D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C946DB26C646DD007C849D /* SceneDelegate.swift */; };
@@ -53,6 +54,7 @@
 		8104EE3E26CA23EF00472E93 /* MAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MAlert.swift; sourceTree = "<group>"; };
 		8104EE4126CA288E00472E93 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		8104EE5026CA376300472E93 /* LoginDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDataModel.swift; sourceTree = "<group>"; };
+		8104EE5526CA50CC00472E93 /* GifImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifImage.swift; sourceTree = "<group>"; };
 		8188909B26C6968800B09A88 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		81C946D626C646DD007C849D /* Training.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Training.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81C946D926C646DD007C849D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 		8104EE3626CA1EC300472E93 /* Helper Classes */ = {
 			isa = PBXGroup;
 			children = (
+				8104EE5526CA50CC00472E93 /* GifImage.swift */,
 				8104EE3726CA1F1500472E93 /* Singleton.swift */,
 				8104EE3E26CA23EF00472E93 /* MAlert.swift */,
 				8104EE4126CA288E00472E93 /* Constants.swift */,
@@ -352,6 +355,7 @@
 				8104EE3F26CA23EF00472E93 /* MAlert.swift in Sources */,
 				81C946DA26C646DD007C849D /* AppDelegate.swift in Sources */,
 				5DE1A4DD26C80DA0009227C3 /* FruitsVegetableTableViewCell.swift in Sources */,
+				8104EE5626CA50CC00472E93 /* GifImage.swift in Sources */,
 				5DE1A4D926C807BC009227C3 /* ProductsCollectionViewCell.swift in Sources */,
 				81C9470126C65545007C849D /* UIColor+Hex.swift in Sources */,
 				8104EE3C26CA238600472E93 /* ComponentExtensions.swift in Sources */,
