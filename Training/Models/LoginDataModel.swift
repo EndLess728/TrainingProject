@@ -10,11 +10,11 @@ import Foundation
 struct LoginModel: Codable {
     let success: Bool
     let message: String
-    let data: DataClass
+    let data: DataClass?
 }
 
 // MARK: - DataClass
 struct DataClass: Codable {
-    let token: String
+    let token: String?
 }
 
